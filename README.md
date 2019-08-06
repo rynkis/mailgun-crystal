@@ -31,6 +31,16 @@ res = client.send_text(
   content: "Testing some Mailgun awesomness!"
 )
 
+#
+# => or send html
+#
+# res = client.send_html(
+#   from: "Excited User <me@samples.mailgun.org>",
+#   to: %w(bar@example.com YOU@YOUR_DOMAIN_NAME),
+#   subject: "Hello",
+#   content: "Testing some Mailgun awesomness!"
+# )
+
 p res # => {
       #      "status_code" => 200 if success,
       #      "id" => mailgun id if success,
