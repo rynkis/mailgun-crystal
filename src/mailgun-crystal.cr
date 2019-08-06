@@ -1,7 +1,6 @@
 require "http/client"
 require "http/params"
 require "base64"
-require "uri"
 require "json"
 
 module MailgunCrystal
@@ -18,11 +17,12 @@ module MailgunCrystal
     @api_key : String
     @domain : String
 
-    def initialize(@api_key, @domain)
+    def initialize(api_key, @domain)
+      @api_key = api_key.gsub(/^api\:/, "")
     end
 
     def auth
-      Base64.strict_encode @api_key
+      Base64.strict_encode "api:#{@api_key}"
     end
 
     def request_with(params : String)
