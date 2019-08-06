@@ -4,7 +4,7 @@ require "base64"
 require "json"
 
 module MailgunCrystal
-  VERSION = "0.1.0"
+  VERSION = "0.2.0"
 
   struct Response
     property status_code, body, id
