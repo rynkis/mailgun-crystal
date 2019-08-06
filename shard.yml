@@ -1,0 +1,9 @@
+name: mailgun-crystal
+version: 0.1.0
+
+authors:
+  - HSU Rynki <Gernischt@gmail.com>
+
+crystal: 0.30.0
+
+license: MIT
