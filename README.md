@@ -38,7 +38,7 @@ res = client.send_text(
 #   from: "Excited User <me@samples.mailgun.org>",
 #   to: %w(bar@example.com YOU@YOUR_DOMAIN_NAME),
 #   subject: "Hello",
-#   content: "Testing some Mailgun awesomness!"
+#   content: "<h1>Testing some Mailgun awesomness!</h1>"
 # )
 
 p res # => {
